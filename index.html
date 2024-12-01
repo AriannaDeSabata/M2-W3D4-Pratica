@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone_Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+        <h1 id="titolo1">TechZone_Shop</h1>
+        <button onclick="changeTitle()">Modifica il titolo</button>
+    </div>
+
+    <h2>Bestseller</h2>
+    <div id="colorBackGround">
+        <input type="color">
+        <button onclick="changeColorBackground()">Cambia colore sfondo</button>
+    </div>
+
+    <button id="buttonProducts" onclick="hide()">Nascondi immagine</button>
+    <div id="products">
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/img/samsung tv.jpg" alt="tv samsung">
+                    <h3>Samsung Smart TV 55"</h3>
+                    <p>Crystal 4K UHD, 4K Upscaling, Slim Look, DVBT-2, Q-Symphony & OTS Lite, Integrato con Bixby, comp con Alexa e Google Assistant, Black 2024 [Amazon EXCL.]</p>
+                    <p class="price">200,00 €</p>
+                    <a  class="link" href="https://www.amazon.it/UE55DU7190UXZT-Upscaling-Q-Symphony-Integrato-Assistant/dp/B0D2DRXCJG?pd_rd_w=VdQYO&content-id=amzn1.sym.4775ba28-ee1f-4c57-aca9-726075fc8348&pf_rd_p=4775ba28-ee1f-4c57-aca9-726075fc8348&pf_rd_r=69TFH0S9SW6A9PZDBS89&pd_rd_wg=QsZwb&pd_rd_r=50de3406-7af7-4fae-adef-e72dd615ed06&pd_rd_i=B0D2DRXCJG&ref_=oct_dx_dotd_B0D2DRXCJG">Link Amazon</a>
+                    <input class="comment" type="text" placeholder="scrivi qua un commento">
+                    <div class="colorLink">
+                        <input class="color1" type="color">
+                        <button onclick="changeColorLink('1')">Cambia colore Prezzo</button>
+                    </div>
+                </td>
+
+                <td>
+                    <img src="assets/img/cuffie.jpg"alt="cuffie">
+                    <h3>Trust Gaming GXT 488 Forze Cuffie PS4 e PS5</h3>
+                    <p>Licenza Ufficiale PlayStation, Over-Ear, Microfono Ripiegabile e Archetto Regolabile, Jack Audio 3.5 mm, Cuffie Gaming Cablate - Nero</p>
+                    <p class="price">23,99 €</p>
+                    <a class="link"  href="https://www.amazon.it/Trust-Gaming-PlayStation-Ripiegabile-Regolabile/dp/B084WLMKGT/ref=sr_1_9?crid=2V5MBSQ2X8AFM&dib=eyJ2IjoiMSJ9.BViHeFOItS38FQVpZeNPkaFMk0qz_USwZfOYQGtKBk-aLXSLXdd-ZpwbQ8bV0m2ftc4ahZ-dbd_udExM7l1PbbjtoKpn-PDE8FuvfYuBwHosQolo650KpzbjDcOz_vfJUUgXSOBfJ7PyFbHr2IAGry7yyUUh9Q4DChTJ8YrGvkstsd8o0phEW-W5nq8gE393_gn2BPZCTNBphlG52EwKCY2peH2M64H2EnKK3wvWOxeGmQaI8u5HB7qmMRXpz0VbWeOCbg9-_v1pEkx3CYlY7oBoJ6TZXiuVSx8gMRfcj3o.JpJ3tgBopcJLcQgBB6mUp5a3QoVQbVJlK-P--jFHd24&dib_tag=se&keywords=cuffie+gaming&nsdOptOutParam=true&qid=1732904616&s=electronics&sprefix=cuffie+ga%2Celectronics%2C118&sr=1-9">Link Amazon</a>
+                    <input class="comment" type="text" placeholder="scrivi qua un commento">
+                    <div class="colorLink">
+                        <input class="color2" type="color">
+                        <button  onclick="changeColorLink('2')">Cambia colore Prezzo</button>
+                    </div>
+                </td>
+
+                <td>
+                    <img src="assets/img/drone.jpg" alt="drone">
+                    <h3>Potensic ATOM Combo GPS Drone Pieghevole</h3>
+                    <p>con Gimbal a 3 Assi, Drone con Telecamera 4K, ＜249 g, 6KM Trasmissione, 96 Minuti di Volo, con 3 Batterie e Hub di Ricarica, QuickShots, Seguito Visivo, C0</p>
+                    <p class="price">300,99 €</p>
+                    <a class="link"  href="https://www.amazon.it/Meta-Quest-128GB-Realt%C3%A0-rivoluzionaria/dp/B0C7W12RN2/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23WC53IZU5GAI&dib=eyJ2IjoiMSJ9.aL9qFwKDmmuCKsDmO_M36IA7pvATvI4kpN9KyQSCGI-ycLxZpwxgingr7mzaArSj_Nb7m792AQc0N8ugvMcehXJYju1ZJfrhE_Sl-lv0diS86_5EiCRcATLAx6U-imnD6hNLFhUeZuE3S9wQy8uOJ1MFAadRol34N6g-VIcXUnTo5kBNvbfU6rK5uVIMt7BuC1NmhN09fERFY1oEaMPhXUQLCQ1t-aRnbWmWTNk4TnkbWFUcJvpZtCkaR7TtwmKaDOpj56GmG8jqUOHSEapZd3goho5MYY0XgYbMGzLcozs.DEShFqBB4i_Sz3HUb4CnCvT5IZaL2JNBkwqhJSftDC4&dib_tag=se&keywords=visore%2Bvr%2Bmeta%2Bguest%2B3&nsdOptOutParam=true&qid=1732904496&sprefix=visore%2Bvr%2Bmeta%2Bguest%2B3%2Caps%2C105&sr=8-5&th=1">Link Amazon</a>
+                    <input class="comment" type="text" placeholder="scrivi qua un commento">
+                    <div class="colorLink">
+                        <input class="color3" type="color">
+                        <button onclick="changeColorLink('3')">Cambia colore Prezzo</button>
+                    </div>
+                </td>
+
+                <td>
+                    <img src="assets/img/proiettore.jpg" alt="proiettore">
+                    <h3>ULTIMEA Proiettore 4K Supportato </h3>
+                    <p>Auto Focus/6D Keystone, Proiettore 1080P Nativo Home Cinema con 900 ANSI, Evitamento degli Oggetti, Proiettore WiFi 6 Bluetooth per iOS/Android/TV Stick</p>
+                    <p class="price">200,00 €</p>
+                    <a class="link"  href="https://www.amazon.it/s?k=proiettore">Link Amazon</a>
+                    <input class="comment" type="text" placeholder="scrivi qua un commento">
+                    <div class="colorLink">
+                        <input class="color4" type="color">
+                        <button onclick="changeColorLink('4')">Cambia colore Prezzo</button>
+                    </div>
+                </td>
+
+                <td>
+                    <img src="assets/img/robot.jpg" alt="robot">
+                    <h3>Adeept 5 Assi Braccio Robotico Kit</h3>
+                    <p>Compatibile con Arduino IDE Kit Robot Fai da Te Kit Braccio Robot Steam con codice di Elaborazione Display OLED ed Esercitazione PDF Tramite Link di Download</p>
+                    <p class="price">50,00 €</p>
+                    <a class="link"  href="https://www.amazon.it/Adeept-Robotico-Compatibile-Elaborazione-Esercitazione/dp/B085C2S1N7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.USyI1bWVgYuKamBF-53ZLxSxhCTYvhZrEU7JD6PU-yjsD81ZOpyjMwE5nYVM6COkvC1oWpf8tckJT8calTTJLiBmoCMCPNmuVGgVtIU5VT9zZp42Rqqm7v3PeFsP8m8af8UPAmMSR4kdD6GH5W-5WvKBuVfTKyZVRapSE-akVaJfF_CnR6JB13-fj_zelL_D-OOrajaD70LFH8FBUKyi-LwvC_-rlhmf-mh2ADP5iJW1Wsdu_piDuul24SlG2jLsfDFLIE43ncaV5R7ccIuCfRfAL6HcBa-I3V4uhvVm4gI.rvpeYsXqYwAJ0AkcNFVJqTCoEEftB9M8NV_YL2pVYLY&dib_tag=se&keywords=robot+arduino&nsdOptOutParam=true&qid=1732904918&sr=8-10">Link Amazon</a>
+                    <input class="comment" type="text" placeholder="scrivi qua un commento">
+                    <div class="colorLink">
+                        <input class="color5" type="color">
+                        <button onclick="changeColorLink('5')">Cambia colore Prezzo</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <h3 id="titolo2">TechZone_Shop</h3>
+        <address>Via Giacomo e Filippo Ciani, Svizzera</address>
+        <button onclick="changeAddress()" id="address">Cambia indirizzo</button>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

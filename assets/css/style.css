@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #000000;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 100px 0 0 0;
+    background-color: hsla(0, 0%, 100%, 0.767);
+}
+
+#title{
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0 30px;
+}
+
+#title  button{
+    border-radius: 20px;
+    background-color: #29292952;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+h2{
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #e65b43;
+}
+#products{
+    color: #000000;
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    padding: 30px 100px;
+}
+#buttonProducts{
+    border-radius: 20px;
+    background-color: #000000; color: #fff;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+}
+
+#products img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+
+}
+table td{
+    background-color: #fff;
+    width: 20%;
+    height: 500px;
+    padding: 10px;
+}
+.link{
+    display: block;
+    margin-bottom: 15px;
+}
+.comment{
+    text-align: center;
+    height: 40px;
+}
+
+#colorBackGround{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    float: right;
+    height: 100px;
+    padding: 15px;
+
+}
+#colorBackGround input{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+#colorBackGround button{
+    border-radius: 20px;
+    border: solid 1px #b9b9b9;
+    margin-top: 5px;
+}
+
+
+footer{
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    margin: 5px;
+
+}
+
+footer button{
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+
+.newClassLink{
+    color: #e64e43;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imgHide{
+    visibility: hidden;
+}
+
+.colorLink{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.colorLink button{
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.colorLink input{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: none;
+}
